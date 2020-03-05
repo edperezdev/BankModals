@@ -65,7 +65,7 @@
 
               </div>
             
-            <button class="btn jsbtn1" type="submit">Elegir esta opción</button>
+            <button class="btn jsbtn1">Elegir esta opción</button>
           </article>
           <article class="opcion opcion2">
               <div class="opcion-content">
@@ -86,7 +86,7 @@
                 </ul>
               </div>
             
-            <button class="btn jsbtn2" type="submit">Elegir esta opción</button>
+            <button class="btn jsbtn2">Elegir esta opción</button>
           </article>
           <article class="opcion opcion3">
               <div class="opcion-content">
@@ -111,26 +111,77 @@
                   </ul>
               </div>
             
-            <button class="btn jsbtn3" type="submit">Elegir esta opción</button>
+            <button class="btn jsbtn3">Elegir esta opción</button>
           </article>
         
       </section>
-      <div class="modal">
-          <div class="modal-inner">
-            <div class="modal-header">
+      <div class="modal modal1">
+          <div class="modal-inner modal-inner1">
+            <div class="modal-header modal-header1">
                 <h2>¡Has elegido la Opción 1!</h2>
                 <span class="modal-elementClose">Cerrar [X]</span>
             </div>
             <div class="modal-body">
                 <div class="modal-body-text"><p>Estás a un paso de abrir tu cuenta. Sin embargo, primero necesitamos pactar una cita.
                 Por favor, llena los siguientes datos y nos contactaremos en el menor plazo posible.</p></div>
-                    <form class="modal-form">
-                        <input type="text" required placeholder="Nombres">
-                        <input type="text" required placeholder="Apellidos">
-                        <input type ="number" required placeholder="Celular">
+                    <form class="modal-form modal-form1">
+                        <input type="text" required placeholder="Nombres" pattern="^[a-zA-Z]+( [a-zA-Z]+)*$">
+                        <input type="text" required placeholder="Apellidos" pattern="^[a-zA-Z]+( [a-zA-Z]+)*$">
+                        <input type ="tel" required placeholder="Celular" pattern="[0-9]+" maxlength="9">
                         <div class="modal-footer">
-                            <button class="btn modal-enviar">Enviar</button>
-                            <button class="btn modal-cancelar">Cancelar</button>
+                            <button class="btn modal-enviar" type="submit">Enviar</button>
+                            <button class="btn modal-reset" type="reset">Reiniciar</button>
+                            <button class="btn modal-cancel">Cancelar</button>
+                        </div>
+
+                    </form>
+            </div>
+            
+          </div>
+          
+      </div>
+      <div class="modal modal2">
+          <div class="modal-inner modal-inner2">
+            <div class="modal-header modal-header2">
+                <h2>¡Has elegido la Opción 2!</h2>
+                <span class="modal-elementClose">Cerrar [X]</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-text"><p>Estás a un paso de abrir tu cuenta. Sin embargo, primero necesitamos pactar una cita.
+                Por favor, llena los siguientes datos y nos contactaremos en el menor plazo posible.</p></div>
+                    <form class="modal-form modal-form2">
+                        <input type="text" required placeholder="Nombres" pattern="^[a-zA-Z]+( [a-zA-Z]+)*$">
+                        <input type="text" required placeholder="Apellidos" pattern="^[a-zA-Z]+( [a-zA-Z]+)*$">
+                        <input type ="tel" required placeholder="Celular" pattern="[0-9]+" maxlength="9">
+                        <div class="modal-footer">
+                            <button class="btn modal-enviar" type="submit">Enviar</button>
+                            <button class="btn modal-reset" type="reset">Reiniciar</button>
+                            <button class="btn modal-cancel">Cancelar</button>
+                        </div>
+
+                    </form>
+            </div>
+            
+          </div>
+          
+      </div>
+      <div class="modal modal3">
+          <div class="modal-inner modal-inner3">
+            <div class="modal-header modal-header3">
+                <h2>¡Has elegido la Opción 3!</h2>
+                <span class="modal-elementClose">Cerrar [X]</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-text"><p>Estás a un paso de abrir tu cuenta. Sin embargo, primero necesitamos pactar una cita.
+                Por favor, llena los siguientes datos y nos contactaremos en el menor plazo posible.</p></div>
+                    <form class="modal-form modal-form3">
+                        <input type="text" required placeholder="Nombres" pattern="[A-Za-z]+">
+                        <input type="text" required placeholder="Apellidos" pattern="[A-Za-z]+">
+                        <input type ="tel" required placeholder="Celular" pattern="[0-9]+" maxlength="9">
+                        <div class="modal-footer">
+                            <button class="btn modal-enviar" type="submit">Enviar</button>
+                            <button class="btn modal-reset" type="reset">Reiniciar</button>
+                            <button class="btn modal-cancel">Cancelar</button>
                         </div>
 
                     </form>
@@ -140,6 +191,9 @@
           
       </div>
     </div>
+    <footer>
+      Desarrollado por Edwin Pérez - marzo del 2020
+    </footer>
     <script
       src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"
       data-auto-replace-svg="nest"
