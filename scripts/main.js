@@ -35,3 +35,9 @@ buttonmodal2.onclick = () => {
 buttonmodal3.onclick = () => {
   modal3.open();
 };
+
+window.addEventListener ("click", function(event){
+  if (event.target.classList.contains("modal")) {
+    event.target.style.display = "none"
+  }
+})
